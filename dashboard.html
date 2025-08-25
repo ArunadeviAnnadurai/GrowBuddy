@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Garden Dashboard | GrowBuddy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    
+    <!-- Dashboard Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <img src="user-avatar.jpg" alt="User" class="rounded-circle" width="80">
+                            <h5 class="mt-2">John's Garden</h5>
+                            <p class="text-muted">New York, USA</p>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="dashboard.html">
+                                    <i class="bi bi-house-door me-2"></i> Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plants.html">
+                                    <i class="bi bi-flower2 me-2"></i> My Plants
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="care.html">
+                                    <i class="bi bi-book me-2"></i> Care Guide
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tracker.html">
+                                    <i class="bi bi-calendar-check me-2"></i> Tracker
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="settings.html">
+                                    <i class="bi bi-gear me-2"></i> Settings
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Weather Widget -->
+                <div class="card">
+                    <div class="card-body">
+                        <h6 class="card-title"><i class="bi bi-cloud-sun me-2"></i> Weather</h6>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="display-6 me-3">72°F</div>
+                            <div>
+                                <div>New York, NY</div>
+                                <div class="text-muted small">Sunny</div>
+                            </div>
+                        </div>
+                        <div class="alert alert-success small">
+                            <i class="bi bi-info-circle me-1"></i> Perfect day for watering your plants!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>My Garden Dashboard</h2>
+                    <button class="btn btn-success">
+                        <i class="bi bi-plus-circle me-1"></i> Add Plant
+                    </button>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-white bg-success">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Total Plants</h6>
+                                <h3 class="card-title">14</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-info">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Need Watering</h6>
+                                <h3 class="card-title">3</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-warning">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Tasks Today</h6>
+                                <h3 class="card-title">2</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Plants -->
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5 class="mb-0">My Plants</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- Plant Card 1 -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <img src="tomato-plant.jpg" class="card-img-top" alt="Tomato">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tomato Plant</h5>
+                                        <p class="card-text small">Planted: 2 weeks ago</p>
+                                        <div class="progress mb-2" style="height: 10px;">
+                                            <div class="progress-bar bg-success" style="width: 45%"></div>
+                                        </div>
+                                        <span class="badge bg-success">Healthy</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Plant Card 2 -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <img src="basil-plant.jpg" class="card-img-top" alt="Basil">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Basil</h5>
+                                        <p class="card-text small">Planted: 1 month ago</p>
+                                        <div class="progress mb-2" style="height: 10px;">
+                                            <div class="progress-bar bg-success" style="width: 75%"></div>
+                                        </div>
+                                        <span class="badge bg-warning text-dark">Needs Water</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Plant Card 3 -->
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <img src="sunflower-plant.jpg" class="card-img-top" alt="Sunflower">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sunflower</h5>
+                                        <p class="card-text small">Planted: 3 days ago</p>
+                                        <div class="progress mb-2" style="height: 10px;">
+                                            <div class="progress-bar bg-success" style="width: 15%"></div>
+                                        </div>
+                                        <span class="badge bg-success">Healthy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-2">
+                            <a href="plants.html" class="btn btn-outline-success">View All Plants</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tasks -->
+                <div class="card">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Today's Tasks</h5>
+                        <a href="#" class="small">View All</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <input class="form-check-input me-2" type="checkbox">
+                                        <span>Water Basil plant</span>
+                                    </div>
+                                    <small class="text-muted">Due: Today 6 PM</small>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <input class="form-check-input me-2" type="checkbox">
+                                        <span>Check for pests on Tomato plant</span>
+                                    </div>
+                                    <small class="text-muted">Due: Today 6 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>

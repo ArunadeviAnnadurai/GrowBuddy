@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Guide | GrowBuddy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    
+    <!-- Care Guide Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header bg-white">
+                        <h5>My Plants</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <div class="d-flex align-items-center">
+                                    <img src="tomato-thumb.jpg" alt="Tomato" width="30" class="rounded me-2">
+                                    <span>Tomato</span>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex align-items-center">
+                                    <img src="basil-thumb.jpg" alt="Basil" width="30" class="rounded me-2">
+                                    <span>Basil</span>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex align-items-center">
+                                    <img src="lavender-thumb.jpg" alt="Lavender" width="30" class="rounded me-2">
+                                    <span>Lavender</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header bg-white">
+                        <h5>Quick Tips</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-success small">
+                            <i class="bi bi-droplet me-1"></i> Water in the morning for best absorption
+                        </div>
+                        <div class="alert alert-info small">
+                            <i class="bi bi-sun me-1"></i> Rotate plants weekly for even sunlight
+                        </div>
+                        <div class="alert alert-warning small">
+                            <i class="bi bi-bug me-1"></i> Check for aphids under leaves
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="card mb-4">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0">Tomato Plant Care Guide</h2>
+                        <span class="badge bg-success">Your Plant</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- AI Chat Interface -->
+                        <div class="ai-chat mb-4 p-3 bg-light rounded">
+                            <div class="d-flex mb-3">
+                                <img src="ai-avatar.jpg" alt="GrowBuddy AI" width="40" height="40" class="rounded-circle me-2">
+                                <div class="flex-grow-1">
+                                    <div class="card p-2">
+                                        <div class="card-body p-2">
+                                            <p class="mb-0">Hello! I'm your GrowBuddy AI assistant. Ask me anything about caring for your tomato plants.</p>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted ms-2">Just now</small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-end mb-3">
+                                <div class="flex-grow-1" style="max-width: 80%;">
+                                    <div class="card bg-success text-white">
+                                        <div class="card-body p-2">
+                                            <p class="mb-0">How often should I water my tomato plant?</p>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted text-end d-block">You, just now</small>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-3">
+                                <img src="ai-avatar.jpg" alt="GrowBuddy AI" width="40" height="40" class="rounded-circle me-2">
+                                <div class="flex-grow-1">
+                                    <div class="card p-2">
+                                        <div class="card-body p-2">
+                                            <p class="mb-0">Tomatoes need 1-2 inches of water per week. Water deeply 2-3 times a week rather than a little every day. The soil should be moist but not soggy.</p>
+                                            <hr class="my-2">
+                                            <p class="mb-0"><strong>Pro Tip:</strong> Water at the base of the plant to avoid fungal diseases!</p>
+                                        </div>
+                                    </div>
+                                    <small class="text-muted ms-2">Just now</small>
+                                </div>
+                            </div>
+
+                            <form class="mt-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Ask about tomato plant care...">
+                                    <button class="btn btn-success" type="submit">
+                                        <i class="bi bi-send"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Care Sections -->
+                        <div class="accordion mb-4" id="careAccordion">
+                            <!-- Watering -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#watering">
+                                        <i class="bi bi-droplet me-2"></i> Watering Guide
+                                    </button>
+                                </h2>
+                                <div id="watering" class="accordion-collapse collapse show" data-bs-parent="#careAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>Frequency</h5>
+                                                <ul>
+                                                    <li>1-2 inches per week</li>
+                                                    <li>Deep watering 2-3 times/week</li>
+                                                    <li>More frequent in containers</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Best Practices</h5>
+                                                <ul>
+                                                    <li>Water in the morning</li>
+                                                    <li>Water at soil level</li>
+                                                    <li>Mulch to retain moisture</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-warning mt-2">
+                                            <i class="bi bi-exclamation-triangle me-1"></i> Avoid wetting leaves to prevent blight
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sunlight -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sunlight">
+                                        <i class="bi bi-brightness-high me-2"></i> Sunlight Requirements
+                                    </button>
+                                </h2>
+                                <div id="sunlight" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
+                                    <div class="accordion-body">
+                                        <p>Tomatoes need <strong>6-8 hours of direct sunlight</strong> daily.</p>
+                                        <div class="progress mb-3" style="height: 20px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 100%">Full Sun</div>
+                                        </div>
+                                        <p>In very hot climates (>90°F), provide afternoon shade to prevent sunscald.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Common Problems -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#problems">
+                                        <i class="bi bi-bug me-2"></i> Common Problems
+                                    </button>
+                                </h2>
+                                <div id="problems" class="accordion-collapse collapse" data-bs-parent="#careAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Blossom End Rot</h5>
+                                                        <p class="card-text small">Dark, sunken spots on fruit bottoms</p>
+                                                        <span class="badge bg-danger">Solution</span>
+                                                        <p class="mt-2 small">Add calcium to soil and maintain even watering</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Early Blight</h5>
+                                                        <p class="card-text small">Brown spots with concentric rings</p>
+                                                        <span class="badge bg-danger">Solution</span>
+                                                        <p class="mt-2 small">Remove affected leaves, improve air circulation</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Care Calendar -->
+                        <h4 class="mb-3"><i class="bi bi-calendar3 me-2"></i> Monthly Care Schedule</h4>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead class="table-success">
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Tasks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>April-May</td>
+                                        <td>Plant seedlings after last frost</td>
+                                    </tr>
+                                    <tr>
+                                        <td>June</td>
+                                        <td>Stake plants, begin fertilizing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July-Aug</td>
+                                        <td>Harvest regularly, watch for pests</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sept</td>
+                                        <td>Final harvest before frost</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</body>
+</html>
